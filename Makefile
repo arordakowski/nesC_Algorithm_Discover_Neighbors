@@ -1,0 +1,3 @@
+COMPONENT=LcaAppC
+include $(MAKERULES)
+
