@@ -13,5 +13,5 @@ To view the output of the algorithm, check the log.txt file created after execut
 
 This algorithm performs the discovery of neighbors through broadcaste messages in the network triggered from the reception of the sensor message with id 0.
 
-implemented by Alexandre Ordakowski
+implemented by Alexandre Ordakowski 
 alexandre.ordako@gmail.com
