@@ -1,0 +1,3 @@
+COMPONENT=DiscoverNeighborsAppC
+include $(MAKERULES)
+

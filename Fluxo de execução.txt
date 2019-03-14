@@ -1,0 +1,20 @@
+O exemplo da Figura 1(a) descreve o algoritmo de descoberta de vizinhos por
+inundação na rede. No estado inicial INI, o sensor com identificador (ID) zero envia
+a mensagem SENSOR ID para seus vizinhos. O sensor zero e os demais sensores re-
+alizam uma mudança logica do estado INI para o estado Wait_First_SENSOR_ID.
+Os sensores que receberem a primeira mensagem SENSOR_ID armazenam o ID con-
+tido na mensagem e enviam seu identificador para seus vizinhos. Em seguida, rea-
+lizam uma mudança por evento do estado Wait First SENSOR ID para o estado
+Form Neighbor List. No estado Form Neighbor List, os sensores continuam
+armazenando o ID dos demais vizinhos durante um certo tempo t_Flood_ID. Quando o
+tempo expirar, os sensores fazem uma mudança para o estado ACK_Neighbor_List e
+enviam uma mensagem de ACK para os sensores conhecidos. Apos o envio da mensagem,
+os sensores realizam mudança lógica para o estado FINISH, armazenando as mensagens
+de ACK recebidas. Ao final da inundação, todos os sensores conhecem seus vizinhos.
+
+- similar ao SBCUP
+- adequação da máquina de estados para a especificação do coordenador em um código em NesC
+- comparação do código gerado em nesC com o ns2 -- se for parecido, há um indício que o mesmo código SLEDS possa gerar código tanto para NS2 como para o nesC
+- o modelo de componentes (RCBM) é adequado para codificação em nesC?
+  (procurar artigos e códigos existentes em nesC para amparar esta discussão)
+  (pesquisar artigos de modelos de desenvolvimento para sensores)
